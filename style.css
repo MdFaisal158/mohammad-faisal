@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0f172a;
+    color: #ffffff;
+}
+
+/* this is menu parts */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/* this is an other parts */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0b1220, #111a2e);
+  text-align: center;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #22c55e;
+    color: #0e2732;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* Projects Section */
+
+
+/* this is contect section */
+.contact {
+  background: #0b1220;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: #28a745;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #218838;
+}
+
+
+
+/* this is footer section */
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #222;
+    color: #fff;
+}
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ff6600;
+    margin-bottom: 20px;
+}
+h1 span {
+    color: #ff6600:
+}
+.role {
+    color:#ccc;
+}
+.contact {
+  background: #0b1220;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: #28a745;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #218838;
+}

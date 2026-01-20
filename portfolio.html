@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--this is my title-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Faisal | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<!--this is my Menu-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hamburger Menu</title>
+
+<style>
+/* ===== Hamburger Icon ===== */
+.hamburger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: black;
+  margin: 6px 0;
+}
+
+/* ===== Side Menu ===== */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;   
+  width: 220px;
+  height: 100%;
+  background: #111;
+  padding-top: 80px;
+  transition: left 0.3s ease;
+}
+
+.side-menu a {
+  display: block;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.side-menu a:hover {
+  background: #333;
+}
+
+/* Active menu */
+.side-menu.active {
+  left: 0;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Hamburger -->
+<div class="hamburger" onclick="toggleMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<!-- Side Menu -->
+<div class="side-menu" id="sideMenu">
+  <a href="#home" onclick="closeMenu()">Home</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#skills" onclick="closeMenu()">Skills</a>
+  <a href="#education" onclick="closeMenu()">Education</a>
+  <a href="#project" onclick="closeMenu()">Project</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+
+<!-- JavaScript -->
+<script>
+function toggleMenu() {
+  document.getElementById("sideMenu").classList.toggle("active");
+}
+
+// Close menu when link clicked
+function closeMenu() {
+  document.getElementById("sideMenu").classList.remove("active");
+}
+</script>
+
+
+</body>
+</html>
+
+<!--Home Section-->
+<!--this is my image parts-->
+
+<section id="home" class="hero">
+    <div class="profile">
+     <img src="Faisal.JPEG" alt="Mohammad Faisal">
+    </div>
+
+<!--this is My  information otptin-->
+    <h1>Hi, I'm <span>Mohammad Faisal</span></h1>
+    <p class="role">I am a Student</p>
+    <a href="#contact" class="btn">Get In Touch</a>
+</section>
+<!-- About Section -->
+<section id="about" style="height:auto; padding:50px; color:white; background:#0b1220;">
+  <h2 style="text-align:center; margin-bottom:40px;">About</h2>
+  <p style="text-align:center; font-size:18px; line-height:1.8;">
+    Hello! I am Mohammad Faisal, <br>
+    I am a student of Computer Science and Engineering (CSE) at Southeast University. I have a strong interest in technology, programming, and problem-solving. I enjoy learning new skills and exploring different areas of computer science to improve myself continuously.
+
+My goal is to become a skilled software engineer and contribute to the tech industry with innovative ideas and efficient solutions. Along with my academic studies, I focus on developing practical skills that will help me grow professionally in the future.
+  </p>
+</section>
+
+
+<!--Skils Section-->
+<!--this is the Skill parts-->
+
+
+<section id="skills" style="height:auto; padding:50px; color:white; background:#0b1220;">
+  <h2 style="text-align:center; margin-bottom:40px;">Skills</h2>
+  <p style="text-align:center; font-size:18px; line-height:1.8;">
+    
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+    </ul>
+</section>
+
+<!-- Education Section -->
+<section id="education" style="height:auto; min-height:100vh; padding:50px; color:white; background:#0b1220;">
+  <h2 style="text-align:center; margin-bottom:40px;">Education</h2>
+
+  <div style="max-width:800px; margin:0 auto; font-size:18px; line-height:1.8;">
+
+    <!-- SSC -->
+    <div style="margin-bottom:30px;">
+      <h3>SSC</h3>
+      <p>Madrasah: ChanderChar Darul Islam Alim Madrasah</p>
+      <p>Passing Year: 2019</p>
+    </div>
+
+    <!-- HSC -->
+    <div style="margin-bottom:30px;">
+      <h3>HSC</h3>
+      <p>College: Ramkrishnapur Degree College</p>
+      <p>Passing Year: 2021</p>
+    </div>
+
+    <!-- Undergraduate -->
+    <div style="margin-bottom:30px;">
+      <h3>Undergraduate</h3>
+      <p>University: SouthEast University</p>
+      <p>Department: Computer Science & Engineering (CSE)</p>
+      <p>Status: Undergraduate</p>
+    </div>
+  </div>
+</section>
+<!--This is  Projects section-->
+<section id="projects">
+  <h1>Projects</h1>
+  <div class="projects-container;">
+    
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+
+  <form action="contact.php" method="POST" class="contact-form">
+
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <input type="tel" name="phone" placeholder="Phone No" required>
+
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit" class="submit-btn">Submit</button>
+
+  </form>
+</section>
+
+<footer>
+    <p>© 2026 Mohammad Faisal</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
